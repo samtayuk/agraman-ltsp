@@ -1,9 +1,0 @@
-Package: agraman-wallpapers
-Version: 0.1
-Architecture: all
-Maintainer: Samuel J. Taylor <samtaylor.uk@gmail.com
-Installed-Size: 1500
-Section: x11
-Priority: optional
-Description: agraman Wallpapers
- The default Wallpapers for agraman.
