@@ -1,0 +1,119 @@
+human-icon-theme (0.28) hardy; urgency=low
+
+  * Adding 24x24 OOo app icons and symlinks for the svg files to the fd.o
+    names for nautilus  
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Thu, 03 Apr 2008 11:05:52 +0200
+
+human-icon-theme (0.27) hardy; urgency=low
+
+  * Fixing a few naming problems and adding a generic media-flash link 
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Tue, 01 Apr 2008 15:51:14 +0200
+
+human-icon-theme (0.26) hardy; urgency=low
+
+  * New  openoffice app icons for the menu; removing 2 16x16 icons for gpm,
+    adding .links file to create symlinks to fd.o names for nautilus
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Tue, 25 Mar 2008 22:38:44 +0100
+
+human-icon-theme (0.25) UNRELEASED; urgency=low
+
+  * .bzr-builddeb/default.conf:
+    - add default configuration for native packages
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 26 Feb 2008 16:41:55 +0000
+
+human-icon-theme (0.24) hardy; urgency=low
+
+  * fix missing replaces to make dapper->hardy upgrade work
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 30 Nov 2007 11:44:12 +0100
+
+human-icon-theme (0.23) gutsy; urgency=low
+
+  * replacing 16x16 gnome-dev-media-sdmmc.png as it was an empty pixmap in
+    response to Launchpad Bug 91426
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Mon, 10 Sep 2007 11:48:33 +0200
+
+human-icon-theme (0.22.1) gutsy; urgency=low
+
+  * Add --prefix=/usr to autogen so that the icons don't go in /usr/local
+
+ -- Albin Tonnerre <lut1n.tne@gmail.com>  Wed, 05 Sep 2007 19:05:30 +0200
+
+human-icon-theme (0.22) gutsy; urgency=low
+
+  * building with new emblems 
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Wed,  5 Sep 2007 12:30:47 +0200
+
+human-icon-theme (0.21) gutsy; urgency=low
+
+  * debian/rules, debian/changelog: switch to native packaging, run
+    ./autogen.sh during build.
+  * debian/control: added autoconf, automake, intltool to Build-Depends.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Tue, 04 Sep 2007 11:48:21 +0200
+
+human-icon-theme (0.20-0ubuntu1) gutsy; urgency=low
+
+  *  index.theme.in: don't fall back to Tango.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Wed, 22 Aug 2007 13:04:09 +0200
+
+human-icon-theme (0.19-0ubuntu1) gutsy; urgency=low
+
+  * add folder-accept-drag. (LP: #69331)
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Mon, 20 Aug 2007 11:54:33 +0200
+
+human-icon-theme (0.18-1ubuntu2) gutsy; urgency=low
+
+  * debian/control: added XS-Vcs-Bzr header.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Wed, 04 Jul 2007 12:25:38 +0200
+
+human-icon-theme (0.18-1ubuntu1) gutsy; urgency=low
+
+  * debian/control.in: 
+    - remove sng Build-Depends.
+    - update Maintainer field.
+  * debian/rules: fixed clean target.
+  * debian/patches/01_make_type_scalable_for_missing_icons.patch: updated.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Wed, 04 Jul 2007 11:55:40 +0200
+
+human-icon-theme (0.18-1) unstable; urgency=low
+
+  [ Alan Baghumian ]
+  * Initial release, forked from Ubuntu (Closes: #390691).
+  * Updated debian/control
+    - Removed Ubuntu specific lines
+    - GNOME team uploads
+    - Changed maintainer
+    - Improved long description
+    - Added Debian and Parsix specific svg and sng logos
+    - Added ${misc:Depends} to deps
+    - Added libmagick9-dev and imagemagick build-dep
+      required versions
+    - Added librsvg2-dev, lsb-release and sng to
+      build-deps
+    - Wrapped build-deps and deps lines
+  * Added debian/watch and debian/control.in files
+  * Updated debian/rules
+    - Added simple-patchsys.mk and uploaders.mk
+    - Added lsb_release distro detection method
+    - Replaces Ubuntu logo with Debian or Parsix
+  * Dropped 01_make_type_scalable_for_missing_icons.patch, obsolete
+
+  [ Loic Minier ]
+  * Add missing build-dep on gnome-pkg-tools.
+  * Build-depend on libxml-parser-perl instead of intltool.
+  * Fix Makefile logic for DISTRO default fallback.
+  * Rewrite the layout of the overrides for simpler rules.
+
+ -- Loic Minier <lool@dooz.org>  Wed, 02 May 2007 23:10:08 +0200
+
