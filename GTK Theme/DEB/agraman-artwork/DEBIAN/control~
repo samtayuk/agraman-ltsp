@@ -1,11 +1,11 @@
-Package: ubuntu-artwork
-Version: 41
+Package: agraman-artwork
+Version: 0.1
 Architecture: all
-Maintainer: Ubuntu Artwork Team <ubuntu-art@lists.ubuntu.com>
+Maintainer: Samuel J. Taylor <samtaylor.uk@gmail.com>
 Installed-Size: 92
-Depends: human-theme (>= 0.10), ubuntu-gdm-themes, ubuntu-wallpapers
+Depends: shiki-wise-theme, agraman-gdm-themes, agraman-wallpapers
 Section: gnome
 Priority: optional
-Description: Ubuntu themes and artwork
+Description: agraman themes and artwork
  This package contains merely the Distributor Logo and pulls in all the
  other components via Depends.
