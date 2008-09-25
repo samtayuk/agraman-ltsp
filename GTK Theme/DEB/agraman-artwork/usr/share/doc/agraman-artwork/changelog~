@@ -1,0 +1,788 @@
+ubuntu-artwork (41) hardy; urgency=low
+
+  [ Kenneth Wimer ]
+  * Setting default gtkrc theme back to Human with Ubuntulooks
+  * Setting gconf key for default screensaver
+
+  [ Michael Vogt ]
+  * add missing Vcs-Bzr header
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Tue, 01 Apr 2008 15:05:31 +0200
+
+ubuntu-artwork (40) hardy; urgency=low
+
+  * Setting Human-Murrine as the gtk control theme 
+  * depend on latest human-theme package
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Wed, 27 Feb 2008 18:12:18 +0100
+
+ubuntu-artwork (39) hardy; urgency=low
+
+  * debian/control: "feisty-gdm-themes, gutsy-wallpapers" ->
+    "ubuntu-gdm-themes, ubuntu-wallpapers"
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Fri, 16 Nov 2007 16:25:13 +0100
+
+ubuntu-artwork (38) gutsy; urgency=low
+
+  * debian/control: don't depends on feisty-session-splashes, we don't show
+    the splash screen any more.
+  * debian/rules: use dh_icons instead of dh_iconcache.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Mon, 01 Oct 2007 10:12:28 +0200
+
+ubuntu-artwork (37) gutsy; urgency=low
+
+  * debian/control: depends on gutsy-wallpapers instead.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Wed, 19 Sep 2007 19:01:46 +0200
+
+ubuntu-artwork (36) feisty; urgency=low
+
+  * debian/control:
+    - change Maintainer field.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Tue, 27 Feb 2007 18:30:42 +0100
+
+ubuntu-artwork (35) feisty; urgency=low
+
+  * debian/gconf-defaults:
+    - set the metacity theme for the artwork package
+
+ -- Sebastien Bacher <seb128@canonical.com>  Mon, 11 Dec 2006 10:36:05 +0100
+
+ubuntu-artwork (34) feisty; urgency=low
+
+  * debian/gconf-defaults:
+    - dropped wallpaper settings, they are provided by feisty-wallpapers
+      now
+  * [Daniel Holbach]:
+    - debian/control: bumped dependency on feisty-wallpapers package.
+
+ -- Johan Kiviniemi <debian@johan.kiviniemi.name>  Wed,  6 Dec 2006 22:00:53 +0200
+
+ubuntu-artwork (33) feisty; urgency=low
+
+  * debian/gconf-defaults:
+    - set gconf keys for the artwork from that package
+  * debian/rules:
+    - use priority 16, desktop-base from Debian uses 15 and the the Ubuntu
+      one needs to be higher to have its artwork used
+
+ -- Sebastien Bacher <seb128@canonical.com>  Fri,  1 Dec 2006 16:52:59 +0100
+
+ubuntu-artwork (32) feisty; urgency=low
+
+  * debian/control:
+    - s/edgy/feisty
+    - dropped community artwork, new artwork will be added.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Wed, 22 Nov 2006 18:35:42 +0100
+
+ubuntu-artwork (31) edgy; urgency=low
+
+  * ubuntu-artwork split. The package now merely contains the
+    distributor-logo. 
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Wed, 26 Jul 2006 13:53:35 +0200
+
+ubuntu-artwork (30) edgy; urgency=low
+
+  * Upload to edgy. 
+  * debian/control:
+    - bump Standards-Version.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Tue, 11 Jul 2006 22:02:53 +0200
+
+iubuntu-artwork (29) dapper-updates; urgency=low
+
+  * art/icons/Human/scalable/*:
+    - updated. 
+  * debian/copyright:
+    - updated.
+  * debian/control:
+    - changed maintainer.
+
+ -- Daniel Holbach <daniel@ubi-dvd>  Tue, 11 Jul 2006 21:43:41 +0200
+
+ubuntu-artwork (28) dapper; urgency=low
+
+  * art/icons/Human/*: 
+    - updated.
+  * community/*:
+    - updated, thanks to the Ubuntu Art team for that!
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Mon, 29 May 2006 17:40:01 +0200
+
+ubuntu-artwork (27) dapper; urgency=low
+
+  * art/icons/Human/*:
+    - updated.
+  * community/*:
+    - added community themes.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Sun, 28 May 2006 16:46:36 +0200
+
+ubuntu-artwork (26) dapper; urgency=low
+
+  * art/icons/Human/*:
+    - renamed folder_home to user-home.svg.
+    - added new scalable filesystems and devices.  
+    - new icons.
+  * Bugs fixed:
+    - swapped OOo icons (Malone: #45168)
+    - desktop icon inconstistency (Malone: #34900)
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Fri, 26 May 2006 13:08:15 +0200
+
+ubuntu-artwork (25) dapper; urgency=low
+
+  * art/icons/Human/:
+    - shuffled netstatus icons around.
+    - made gtk-close show up, added desktop emblem.
+    - added stock_folder-{copy,move}.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Thu, 25 May 2006 12:30:50 +0200
+
+ubuntu-artwork (24) dapper; urgency=low
+
+  * debian/patches/01_make_type_scalable_for_missing_icons.patch:
+    - moved a lot of sections to be fixed instead of 'faked' scalable.
+      (Malone: #46219 and its 42679267426 duplicates)
+  * art/icons/Human/icons/*/apps/gnome-netstatus-*.png:
+    - cropped padding. (Malone: #34521)
+  * art/icons/Human/scalable:
+    - update.
+  * art/icons/Human/*/actions: 
+    - update.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Tue, 23 May 2006 18:25:09 +0200
+
+ubuntu-artwork (23) dapper; urgency=low
+
+  * art/icons/Human/scalable/*:
+    - new icons, but more work needed to fix Malone: #34399 ("new human icons
+      scale poorly")
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Tue, 23 May 2006 08:44:02 +0200
+
+ubuntu-artwork (22) dapper; urgency=low
+
+  * The "This is not the final artwork!" release.
+  * art/wallpapers/*.png:
+    - "updated".
+  * art/splash/ubuntu-slick.png:
+    - new splash.
+  * art/icons/Human/*:
+    - updated, bugs fixed:
+      - Malone: #45195 ("Incorrect floppy drive icon (appears as an USB
+        media)")
+      - Malone: #44934: ("Today's new icons for openoffice in Dapper are
+        swapped")
+      - Malone: #40150: ("Fuzzy icons in the applications menu")
+      - Malone: #45150: ("system-log-out.png isn't very distinct when small")
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Sun, 21 May 2006 14:17:16 +0200
+
+ubuntu-artwork (21) dapper; urgency=low
+
+  * art/icons/*:
+    - ship distributor-logo in hicolor again. (Malone: #45128: 
+      "Ubuntu icon next to the Applications menu is gone")
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Wed, 17 May 2006 10:00:44 +0200
+
+ubuntu-artwork (20) dapper; urgency=low
+
+  * art/icons/Human/*:
+    - updated.
+  * debian/control:
+    - Build-Depends on hicolor-icon-theme, pkg-config (>= 0.19),
+      icon-naming-utils (>= 0.7.1), libmagick9-dev, imagemagick, libgtk2.0-bin,
+      autotools-dev.
+  * configure.in:
+    - automatic processing of icon subdirs, usage of icon-naming-utils, etc.
+  * svg2png.sh.in:
+    - nicked from Tango icon themes.
+  * */*/Makefile.am: 
+    - adapted.
+  * autogen.sh, debian/control, configure.in:
+    - use automake 1.9.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Mon, 15 May 2006 16:58:50 +0200
+
+ubuntu-artwork (19) dapper; urgency=low
+
+  * art/icons/Human/*:
+    - updated.
+    - Bugs fixed:
+      - Malone: #42545: "Displaced trash full/empty icon in the Human set"
+      - Malone: #35811: "Wastebacket and Battery icon look too similar"
+  * debian/patches/01_make_type_scalable_for_missing_icons.patch:
+    - updated.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Mon, 15 May 2006 13:01:24 +0200
+
+ubuntu-artwork (18) dapper; urgency=low
+
+  * art/icons/Human/*/filesystems/gnome-fs-ftp.png:
+    - updated.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Tue,  9 May 2006 21:30:54 +0200
+
+ubuntu-artwork (17) dapper; urgency=low
+
+  * art/gdm/Human/gtk-2.0/gtkrc:
+    - added gtk-icon-theme-name = "Human" (Malone: #43411, "Inconsistent 
+      icons for language selection")
+  * art/icons/Human/*/action/:
+    - moved to 'actions', partly fixes Malone: #43757 ("Bad icons issue" -
+      about evolution)
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Tue,  9 May 2006 11:05:26 +0200
+
+ubuntu-artwork (16) dapper; urgency=low
+
+  * art/icons/*: 
+    - updated.
+  * debian/patches/01_make_type_scalable_for_missing_icons.patch:
+    - this is a fix of the category 'quick and dirty', I hope to be able to
+      drop it soon.
+  * .bzr/:
+    - dropped.
+  * debian/control:
+    - bumped Standards-Version.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Mon,  8 May 2006 09:30:57 +0200
+
+ubuntu-artwork (15) dapper; urgency=low
+
+  * art/icons/*:
+    - updated.
+  * Bugs fixed:
+    - Malone: #39180. (missing icon cache, fixed by rebuild with fixed
+      debhelper)
+    - Malone: #34841: "strength meter inverted".
+    - Malone: #34521: "network-monitor wifi-signal bar is far too long"
+  * art/wallpaper/warty-*.png, art/splash/ubuntu-slick.png:
+    - tidied up for beta.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Sun, 16 Apr 2006 12:27:30 +0200
+
+ubuntu-artwork (14) dapper; urgency=low
+
+  * art/splash/ubuntu-slick.png:
+    - added.
+  * art/splash/Makefile.am:
+    - changed.
+  * art/wallpaper/warts-*.png:
+    - exchanged.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Sat,  8 Apr 2006 00:07:01 +0200
+
+ubuntu-artwork (13) dapper; urgency=low
+
+  * debian/postinst:
+    - remove manual gtk-update-icon-cache call, gnome.mk does it for us.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Fri,  7 Apr 2006 12:47:48 +0200
+
+ubuntu-artwork (12) dapper; urgency=low
+
+  * art/icons/Human/index.theme.in:
+    - change inherits.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Thu,  6 Apr 2006 18:40:35 +0200
+
+ubuntu-artwork (11) dapper; urgency=low
+
+  * art/icons/Human/index.theme.in:
+    - apply patch from Sylvain Defresne <sdefresne@gmail.com>, fixes
+      Malone: #34379 ("Inconsistent icon size in file open dialog")
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Fri, 31 Mar 2006 12:26:51 +0200
+
+ubuntu-artwork (10) dapper; urgency=low
+
+  * art/metacity/Human/metacity-theme-1.xml:
+    - new upstream version
+  * art/gdm/Human/gtk-2.0/gtkrc:
+    - don't set a special button color, the standard color is better
+
+ -- Sebastien Bacher <seb128@canonical.com>  Tue, 28 Mar 2006 16:22:27 +0200
+
+ubuntu-artwork (9) dapper; urgency=low
+
+  * debian/dirs:
+    - updated the icon theme dirname
+
+ -- Sebastien Bacher <seb128@canonical.com>  Wed, 15 Mar 2006 10:48:06 +0100
+
+ubuntu-artwork (8) dapper; urgency=low
+
+  * debian/postinst:
+    - register the x-cursor-theme alternative with the adapted path for xorg
+
+ -- Sebastien Bacher <seb128@canonical.com>  Wed, 15 Mar 2006 00:05:26 +0100
+
+ubuntu-artwork (7) dapper; urgency=low
+
+  * art/gdm/Human/gtk-2.0/gtkrc:
+    - fix a color bug with the languages list
+  * debian/control:
+    - require new ubuntulooks theme package
+  * debian/rules:
+    - don't install the ubuntulooks gtkrc file, it's shipped with the theme
+
+ -- Sebastien Bacher <seb128@canonical.com>  Thu,  9 Mar 2006 20:35:55 +0000
+
+ubuntu-artwork (6) dapper; urgency=low
+
+  * art/gdm/Human/gtk-2.0/gtkrc:
+    - use font_name = "Sans 11" for the theme
+
+ -- Sebastien Bacher <seb128@canonical.com>  Thu,  9 Mar 2006 19:41:47 +0000
+
+ubuntu-artwork (5) dapper; urgency=low
+
+  * art/gnome/Human/index.theme.in:
+    - use Human icon theme
+  * art/gtk/Human/gtkrc:
+    - fix the look of an evolution widget
+  * art/metacity/Human/metacity-theme-1.xml:
+    - fix a rendering bug from the theme manager
+
+ -- Sebastien Bacher <seb128@canonical.com>  Thu,  9 Mar 2006 16:49:30 +0000
+
+ubuntu-artwork (4) dapper; urgency=low
+
+  * debian/control:
+    - ubuntu-artwork depends on gtk2-engines-ubuntulooks
+  * art/icons/Human:
+    - using the 'Numan' icon set
+  * art/gdm/{Human,HumanCircle}/gtk-2.0/gtkrc:
+    - new GTK+ themes to load with GDM themes
+  * art/metacity/Human:
+    - updated Clearlooks/metacity
+  * art/gtk/Human:
+    - updated Clearlooks/GTK+, depends on UbuntuLooks engine
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Fri, 10 Mar 2006 01:49:46 +1100
+
+ubuntu-artwork (3) dapper; urgency=low
+
+  * debian/control:
+    - Build-Depend on libglib2.0-dev.
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Wed,  1 Mar 2006 10:26:24 +0100
+
+ubuntu-artwork (2) dapper; urgency=low
+
+  * debian/control:
+    - Build-Depend on gnome-common.
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Mon, 27 Feb 2006 11:35:25 +0100
+
+ubuntu-artwork (1) dapper; urgency=low
+
+  * This is now a native package.
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Thu, 23 Feb 2006 14:28:53 +0000
+
+ubuntu-artwork (0.2.28-3) dapper; urgency=low
+
+  * debian/postinst:
+    - do not install the grub splash (but leave it so that users can
+      enable it)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 21 Feb 2006 10:05:33 +0100
+
+ubuntu-artwork (0.2.28-2) dapper; urgency=low
+
+  * debian/postinst: 
+    - only install the alternative if /boot/grub is available
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 16 Feb 2006 19:01:06 +0100
+
+ubuntu-artwork (0.2.28-1) dapper; urgency=low
+
+  * art/grub/grub-artwork.xpm.gz: added splash image for grub
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 16 Feb 2006 09:39:00 +0100
+
+ubuntu-artwork (0.2.27-1.1) dapper; urgency=low
+
+  * debian/patches/01_change_ubuntu_theme.patch:
+    - use only one menu (dapper-desktop-changes)
+  * debian/rules:
+    - use simple-patchsys.ml
+
+ -- Sebastien Bacher <seb128@canonical.com>  Wed, 25 Jan 2006 23:00:42 +0100
+
+ubuntu-artwork (0.2.27-1) breezy; urgency=low
+
+  * New upstream release:
+    - Update screenshot.png for HumanCircle (Closes: Ubuntu#16690)
+    - Cleaner distributor-logo.png (Closes: Ubuntu#16744)
+    - Removed strapline on ubuntu-smooth.png splash (Closes: Ubuntu#8748)
+    - Less noise on backgrounds (Closes: Ubuntu#16672)
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Wed,  5 Oct 2005 07:41:16 +1000
+
+ubuntu-artwork (0.2.26-1) breezy; urgency=low
+
+  * New upstream release:
+    - include hicolor/48x48/apps/distributor-logo.png for great justice
+    - really update HumanCircle this time!
+  * debian/copyright:
+    - update to reflect CC-A-SA license
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Fri, 30 Sep 2005 18:22:08 +1000
+
+ubuntu-artwork (0.2.25-1) breezy; urgency=low
+
+  * New upstream release
+    - removed browser homepage
+    - updated to breezy splash and wallpaper
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Fri, 30 Sep 2005 06:06:00 +1000
+
+ubuntu-artwork (0.2.24-3) breezy; urgency=low
+
+  * Update art/homepage/index.html to refer to 5.10/Breezy Preview rather
+    than 5.04/Hoary.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed,  7 Sep 2005 10:47:41 +0100
+
+ubuntu-artwork (0.2.24-2) breezy; urgency=low
+
+  * Add usr/X11R6/lib/X11/icons/default to debian/dirs, since we try to
+    create an alternatives symlink there 
+
+ -- Matt Zimmerman <mdz@ubuntu.com>  Wed, 10 Aug 2005 13:07:26 -0700
+
+ubuntu-artwork (0.2.24-1) hoary; urgency=low
+
+  * New upstream release
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Wed,  6 Apr 2005 22:19:10 +1000
+
+ubuntu-artwork (0.2.23-2.1) hoary; urgency=low
+
+  * Fix Hehdeghog -> Hedgehog typo (Ubuntu: #8717)
+
+ -- Thom May <thom@ubuntu.com>  Wed,  6 Apr 2005 12:40:07 +0100
+
+ubuntu-artwork (0.2.23-2) hoary; urgency=low
+
+  * Update art/homepage/index.html to refer to 5.04/Hoary rather than
+    4.10/Warty
+
+ -- Matt Zimmerman <mdz@ubuntu.com>  Tue,  5 Apr 2005 21:26:43 -0700
+
+ubuntu-artwork (0.2.23-1) hoary; urgency=low
+
+  * Revert date related fix, definitely some serious regression action
+    in there.
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Sat,  2 Apr 2005 15:21:16 +1000
+
+ubuntu-artwork (0.2.22-1) hoary; urgency=low
+
+  * Artwork update, and fixes to date related issues
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Fri,  1 Apr 2005 13:18:03 +1000
+
+ubuntu-artwork (0.2.21-3) hoary; urgency=low
+
+  * Fix postinst to respond to arguments that dpkg will actually pass
+    (Ubuntu #7715)
+
+ -- Matt Zimmerman <mdz@ubuntu.com>  Sun, 27 Mar 2005 15:53:40 -0800
+
+ubuntu-artwork (0.2.21-2) hoary; urgency=low
+
+  * art/gnome/Human/index.theme.in
+    - s/GNOME/gnome/ -> not happy Jan.
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Sat, 26 Mar 2005 13:24:38 +1100
+
+ubuntu-artwork (0.2.21-1) hoary; urgency=low
+
+  * New upstream release
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Sat, 26 Mar 2005 12:34:15 +1100
+
+ubuntu-artwork (0.2.20-1) hoary; urgency=low
+
+  * New upstream release
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Sat, 26 Mar 2005 00:49:29 +1100
+
+ubuntu-artwork (0.2.19-2) hoary; urgency=low
+
+  * Depend on gtk2-engines-clearlooks, fix cursor theme installation.
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Thu, 10 Mar 2005 06:43:15 +1100
+
+ubuntu-artwork (0.2.19-1) hoary; urgency=low
+
+  * New default backgrounds, GTK+ theme, GDM tweaks.
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Wed,  9 Mar 2005 23:03:58 +1100
+
+ubuntu-artwork (0.2.18-2) hoary; urgency=low
+
+  * Fixed gnome-background-properties collision with gnome-backgrounds. Had
+    to happen some time. Thanks to Brandon Hale for pointing it out.
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Thu,  3 Mar 2005 07:14:59 +1100
+
+ubuntu-artwork (0.2.18-1) hoary; urgency=low
+
+  * New upstream release.
+
+ -- Jeff Waugh <jeff.waugh@ubuntu.com>  Thu,  3 Mar 2005 03:19:37 +1100
+
+ubuntu-artwork (0.2.17-2) hoary; urgency=low
+
+  * debian/rules:
+    - Symlink gnome-background-properties to gnome-wallpaper-properties
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Wed,  1 Dec 2004 17:53:21 +1100
+
+ubuntu-artwork (0.2.17-1) hoary; urgency=low
+
+  * Display the PAM error message (Hoary: #2699)
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Sat, 30 Oct 2004 23:20:24 +1000
+
+ubuntu-artwork (0.2.16-1) hoary; urgency=low
+
+  * New upstream release
+    - Fix 'username' text location on HumanCircle GDM theme (Hoary: #2337)
+    - Nuke the bevel around maximised windows in the metacity theme (Hoary:
+      2655)
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Sat, 30 Oct 2004 14:23:25 +1000
+
+ubuntu-artwork (0.2.14-1) warty; urgency=low
+
+  * Avoid tweaking idiotic background crasher with wallpapers.xml
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Wed, 20 Oct 2004 08:21:42 +1000
+
+ubuntu-artwork (0.2.13-1) warty; urgency=low
+
+  * Use non-people artwork by default:
+    - New GDM default 'Human' is similar to, but sexier than the Preview
+      release artwork
+    - 'HumanCircle' is the Release Candidate circle-of-friends artwork
+    - Revert to Ubuntu logo splash
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Wed, 20 Oct 2004 07:36:09 +1000
+
+ubuntu-artwork (0.2.12-1) warty; urgency=low
+
+  * Move calendar artwork out into new package.
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Sat, 16 Oct 2004 02:27:54 +1000
+
+ubuntu-artwork (0.2.11-1) warty; urgency=low
+
+  * New GDM theme, splash, widescreen backgrounds.
+  * On-disk home page data.
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Wed, 13 Oct 2004 21:52:11 +1000
+
+ubuntu-artwork (0.2.10-1) warty; urgency=low
+
+  * Integrate new desktop backgrounds
+
+ -- Matt Zimmerman <mdz@canonical.com>  Tue, 12 Oct 2004 16:28:38 -0700
+
+ubuntu-artwork (0.2.9-1) warty; urgency=low
+
+  * Integrated more icons from Andrew.
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Fri,  8 Oct 2004 10:16:19 +1000
+
+ubuntu-artwork (0.2.8-2) warty; urgency=low
+
+  * Make postinst more robust
+    - Don't mess with grub on initial install
+    - Don't let update-grub failure cause postinst failure
+    - exit 0
+
+ -- Matt Zimmerman <mdz@canonical.com>  Sat, 18 Sep 2004 16:45:31 -0700
+
+ubuntu-artwork (0.2.8-1) warty; urgency=low
+
+  * Update gdm, gtk and backgrounds.
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Wed, 15 Sep 2004 11:45:20 +1000
+
+ubuntu-artwork (0.2.7-1) warty; urgency=low
+
+  * Final images artwork for preview release, theme tweaks coming soon.
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Wed, 15 Sep 2004 08:24:46 +1000
+
+ubuntu-artwork (0.2.6-1) warty; urgency=low
+
+  * Do not use Human icon theme by default, do not fall back on the
+    HighContrastInverse theme, don't depend on gnome-a11y-themes.
+
+ -- Jeff Waugh <jdub@perkypants.org>  Tue, 14 Sep 2004 10:13:30 +1000
+
+ubuntu-artwork (0.2.5-1) warty; urgency=low
+
+  * Integrated more icons from Andrew.
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Sat, 11 Sep 2004 18:05:57 +1000
+
+ubuntu-artwork (0.2.4-1) warty; urgency=low
+
+  * Integrated more icons from Andrew.
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Fri, 10 Sep 2004 15:51:00 +1000
+
+ubuntu-artwork (0.2.3-1) warty; urgency=low
+
+  * Integrated more icons from Andrew.
+  * Fixed upgrade from old versions that abused grub.
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Wed,  8 Sep 2004 16:21:48 +1000
+
+ubuntu-artwork (0.2.2-1) warty; urgency=low
+
+  * Fixed scalable icon theme size.
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Mon,  6 Sep 2004 11:08:13 +1000
+
+ubuntu-artwork (0.2.1-3) warty; urgency=low
+
+  * Ooof, intltool-debian had me confused. We need to depend on intltool to
+    get libxml-parser-perl. Gar!
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Sun,  5 Sep 2004 00:37:31 +1000
+
+ubuntu-artwork (0.2.1-2) warty; urgency=low
+
+  * Stupid lack of cdbs build depends. I'm an idiot.
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Sun,  5 Sep 2004 00:02:53 +1000
+
+ubuntu-artwork (0.2.1-1) warty; urgency=low
+
+  * New upstream release :-)
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Sat,  4 Sep 2004 11:52:44 +1000
+
+ubuntu-artwork (0.1-14) warty; urgency=low
+
+  * Made the theme use Industrial icons instead of Suede. Quick and dirty fix
+    while I redo the package behind the scenes.
+
+ -- Jeff Waugh <jeff.waugh@canonical.com>  Fri,  3 Sep 2004 18:25:47 +1000
+
+ubuntu-artwork (0.1-13) warty; urgency=low
+
+  * removed ubuntu directory and test file, they were just rogue files sitting
+    around
+
+ -- Nathaniel McCallum <npmccallum@gentoo.org>  Fri, 27 Aug 2004 20:13:28 -0400
+
+ubuntu-artwork (0.1-12) warty; urgency=low
+
+  * Removed excess dependencies.
+
+ -- Nathaniel McCallum <npmccallum@gentoo.org>  Fri, 27 Aug 2004 12:30:49 -0400
+
+ubuntu-artwork (0.1-11) warty; urgency=low
+
+  * Updated ubuntu GDM theme with better i18n support
+
+ -- Nathaniel McCallum <npmccallum@gentoo.org>  Tue, 17 Aug 2004 05:06:34 -0400
+
+ubuntu-artwork (0.1-10) warty; urgency=low
+
+  * Add rotating monthly calendar magic using hidden Ximian magic.
+  * Add dark-corner logo as example.
+
+ -- Scott James Remnant <scott@netsplit.com>  Fri, 13 Aug 2004 22:03:11 +0100
+
+ubuntu-artwork (0.1-9) warty; urgency=low
+
+  * Remove postinst, prerm
+
+ -- Matt Zimmerman <mdz@debian.org>  Mon,  9 Aug 2004 14:01:29 -0700
+
+ubuntu-artwork (0.1-8) warty; urgency=low
+
+  * debian/postinst, debian/prerm: Remove gdm.conf updating code.
+  * debian/control: Remove gdm dependency.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Mon,  9 Aug 2004 11:11:40 +0100
+
+ubuntu-artwork (0.1-7) warty; urgency=low
+
+  * Makefile: Separate grub-splash installation into new install-grub
+    target.
+  * debian/control: Architecture: any. Make grub dependency a substvar.
+  * debian/postinst: Remove update-grub calls.
+  * debian/postrm: Remove.
+  * debian/rules: If building for i386, set grub-depends substvar and add
+    update-grub fragments to #DEBHELPER# substitution for postinst and
+    postrm.
+  * debian/rules: Remove lots of unnecessary debhelper calls.
+  * debian/prerm: Avoid bashisms.
+  * debian/copyright, debian/control: Clean up minor lintian complaints.
+
+ -- Colin Watson <cjwatson@flatline.org.uk>  Fri,  6 Aug 2004 13:30:00 +0100
+
+ubuntu-artwork (0.1-6) warty; urgency=low
+
+  * grub-splash.png: Added grub splash image
+  * debian/postinst + debian/prerm: Fixed gdm bug caused by bad permissions on gdm.conf
+  * debian/postinst: added update-grub call to update splash image in menu.lst
+  * debian/postrm: update-grub call to remove splash image from menu.lst
+  * debian/control: imagemagick is now a builddep
+  * Makefile: convert png to xpm.gz format
+
+ -- Nathaniel McCallum <npmccallum@gentoo.org>  Thu, 29 Jul 2004 11:53:49 -0400
+
+ubuntu-artwork (0.1-5) warty; urgency=low
+
+  * Improved GDM conf updating (handles no-default theme scenario)
+
+ -- Nathaniel McCallum <npmccallum@gentoo.org>  Wed, 28 Jul 2004 12:04:51 -0400
+
+ubuntu-artwork (0.1-4) warty; urgency=low
+
+  * Added GDM conf updating in debian/postinst and debian/prerm
+
+ -- Nathaniel McCallum <npmccallum@gentoo.org>  Tue, 27 Jul 2004 23:49:13 -0400
+
+ubuntu-artwork (0.1-3) warty; urgency=low
+
+  * Added GDM theme
+
+ -- Nathaniel McCallum <npmccallum@gentoo.org>  Tue, 27 Jul 2004 20:46:13 -0400
+
+ubuntu-artwork (0.1-2) warty; urgency=low
+
+  * Fixed a small color problem in the Ubuntu gtk theme
+
+ -- Nathaniel McCallum <npmccallum@gentoo.org>  Tue, 27 Jul 2004 20:11:25 -0400
+
+ubuntu-artwork (0.1-1) warty; urgency=low
+
+  * Initial Release.
+  * Contains arwork consisting of:
+    . GNOME meta-theme
+    . Default wallpaper
+    . GNOME splash
+
+ -- Nathaniel McCallum <npmccallum@gentoo.org>  Tue, 27 Jul 2004 14:15:22 -0400
+
