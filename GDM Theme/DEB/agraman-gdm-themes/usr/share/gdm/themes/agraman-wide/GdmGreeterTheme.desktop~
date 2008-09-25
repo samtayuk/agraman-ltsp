@@ -1,8 +1,8 @@
 [GdmGreeterTheme]
 Encoding=UTF-8
 Greeter=agraman-wide.xml
-Name=agraman-wide-0.2 GDM
+Name=agraman-wide-0.3 GDM
 Description=agraman wide GDM.
-Author=Samuel J. Taylor(agraman LTD), orangine by perfectska04, Daniel Fore.
+Author=Samuel J. Taylor(agraman LTD), orignal by perfectska04, Daniel Fore.
 Copyright=GPL
 Screenshot=screen.jpg
