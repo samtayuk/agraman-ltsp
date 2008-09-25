@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper>
+    <name>agraman</name>
+    <filename>/usr/share/backgrounds/Arc-Colors Transparent Wallpaper.png</filename>
+    <options>zoom</options>
+    <pcolor>#638E36</pcolor>
+    <scolor>#638E36</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>agraman-wide</name>
+    <filename>/usr/share/backgrounds/Arc-Wise.png</filename>
+    <options>zoom</options>
+    <pcolor>#638E36</pcolor>
+    <scolor>#638E36</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>agraman</name>
+    <filename>/usr/share/backgrounds/Arc-Wise Non-Wide.png</filename>
+    <options>zoom</options>
+    <pcolor>#638E36</pcolor>
+    <scolor>#638E36</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+</wallpapers>
