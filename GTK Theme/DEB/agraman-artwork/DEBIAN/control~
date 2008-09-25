@@ -1,0 +1,11 @@
+Package: ubuntu-artwork
+Version: 41
+Architecture: all
+Maintainer: Ubuntu Artwork Team <ubuntu-art@lists.ubuntu.com>
+Installed-Size: 92
+Depends: human-theme (>= 0.10), ubuntu-gdm-themes, ubuntu-wallpapers
+Section: gnome
+Priority: optional
+Description: Ubuntu themes and artwork
+ This package contains merely the Distributor Logo and pulls in all the
+ other components via Depends.

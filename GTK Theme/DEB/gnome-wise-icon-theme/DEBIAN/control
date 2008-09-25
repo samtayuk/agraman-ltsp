@@ -1,0 +1,10 @@
+Package: gnome-wise-icon-theme
+Version: 2.3.0
+Architecture: all
+Maintainer: Samuel J. Taylor <samtaylor.uk@gmail.com>
+Installed-Size: 3620
+Section: x11
+Priority: optional
+Description: gnome-wise Icon theme
+ gnome-wise is a nice and well polished icon theme for
+ the GNOME desktop.

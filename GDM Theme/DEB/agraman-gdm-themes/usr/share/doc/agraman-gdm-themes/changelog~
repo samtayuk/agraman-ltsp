@@ -1,0 +1,256 @@
+ubuntu-gdm-themes (0.29) hardy; urgency=low
+
+  * Adding two svg files to the human list theme and fixing human theme bug
+    (LP #202193)
+  * Replacing the human list gtkrc to fix/work around bug (LP #210538)
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Thu, 03 Apr 2008 11:14:48 +0200
+
+ubuntu-gdm-themes (0.28) hardy; urgency=low
+
+  * Removing extra unused pics from the HumanList theme to reduce the file
+    size. These pieces are still available in the author's bzr repo 
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Tue, 25 Mar 2008 13:55:52 +0100
+
+ubuntu-gdm-themes (0.27) hardy; urgency=low
+
+  * Updating the look of the Human theme.
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Tue, 25 Mar 2008 13:47:18 +0100
+
+ubuntu-gdm-themes (0.26) hardy; urgency=low
+
+  * Updated the gdm theme to fix a bug (LP: 202193)
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Wed, 19 Mar 2008 15:50:15 +0100
+
+ubuntu-gdm-themes (0.25) hardy; urgency=low
+
+
+  * Updating GDM to fit with desktop 
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Thu, 13 Mar 2008 08:41:48 +0100
+
+
+ubuntu-gdm-themes (0.24) hardy; urgency=low
+
+  * Adding defined width to PAM Errors box to fix bug #29986
+
+ -- Kenneth Wimer <kwwii@ubuntu.com>  Mon, 18 Feb 2008 14:40:07 +0100
+
+ubuntu-gdm-themes (0.23) hardy; urgency=low
+
+  * debian/control: 
+    - conflict with feisty-gdm-themes.
+    - replace 'feisty' with 'ubuntu'.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Fri, 16 Nov 2007 16:38:22 +0100
+
+feisty-gdm-themes (0.22) gutsy; urgency=low
+
+  * setup.py and setup.cfg updated to new python-distutils-extra API.
+    Fixes FTBFS (LP: #135315).  Thanks to Daniel Holbach.
+
+ -- Ian Jackson <iwj@ubuntu.com>  Thu, 11 Oct 2007 14:55:08 +0100
+
+feisty-gdm-themes (0.21) feisty; urgency=low
+
+  * Updating HumanList theme 
+
+ -- Kenneth Wimer <wimer@kde.org>  Wed,  4 Apr 2007 10:04:05 +0200
+
+feisty-gdm-themes (0.20) feisty; urgency=low
+
+  * Adding icons removed by mistake 
+
+ -- Kenneth Wimer <wimer@kde.org>  Mon, 26 Mar 2007 15:29:17 +0200
+
+feisty-gdm-themes (0.19) feisty; urgency=low
+
+  * Adding gtkrc to the HumanCircle theme, modifying the HumanList theme a bit 
+
+ -- Kenneth Wimer <wimer@kde.org>  Mon, 26 Mar 2007 14:07:22 +0200
+
+feisty-gdm-themes (0.18) feisty; urgency=low
+
+  * HumanList now has Human icons.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Thu, 15 Mar 2007 17:56:45 +0100
+
+feisty-gdm-themes (0.17) feisty; urgency=low
+
+  * Changing name of list enabled theme to be non-release specific 
+
+ -- Kenneth Wimer <wimer@kde.org>  Thu, 15 Mar 2007 12:41:51 +0100
+
+feisty-gdm-themes (0.16) feisty; urgency=low
+
+  * Adding list enabled theme from bersace 
+
+ -- Kenneth Wimer <wimer@kde.org>  Tue, 13 Mar 2007 14:24:32 +0100
+
+feisty-gdm-themes (0.15) feisty; urgency=low
+
+  * set Maintainer and XS-Vcs-Bzr.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Fri,  9 Mar 2007 11:30:12 +0100
+
+feisty-gdm-themes (0.14) feisty; urgency=low
+
+  * updating to new and hopefully close to final background/logo combination 
+
+ -- Kenneth Wimer <wimer@kde.org>  Mon, 26 Feb 2007 22:34:11 +0100
+
+feisty-gdm-themes (0.13) feisty; urgency=low
+
+  * New release.
+  * Use native packaging.
+  * debian/control, debian/rules:
+    - use python-distutils-extras and python 'build system'.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Mon, 26 Feb 2007 13:55:15 +0100
+
+feisty-gdm-themes (0.12-0ubuntu1) feisty; urgency=low
+
+  * updating Human.xml 
+
+ -- Kenneth Wimer <wimer@kde.org>  Thu, 22 Feb 2007 18:47:08 +0100
+
+feisty-gdm-themes (0.11-0ubuntu4) feisty; urgency=low
+
+  * the latest bg pic
+
+ -- Kenneth Wimer <wimer@kde.org>  Thu, 22 Feb 2007 10:56:56 +0100
+
+feisty-gdm-themes (0.11-0ubuntu3) feisty; urgency=low
+
+  * ok, one more update
+
+ -- Kenneth Wimer <wimer@kde.org>  Wed, 21 Feb 2007 23:55:16 +0100
+
+feisty-gdm-themes (0.11-0ubuntu2) feisty; urgency=low
+
+  * updating pics again 
+
+ -- Kenneth Wimer <wimer@kde.org>  Wed, 21 Feb 2007 22:35:15 +0100
+
+feisty-gdm-themes (0.11-0ubuntu1) feisty; urgency=low
+
+  * adding the .desktop file to the makefile, changing the pics 
+
+ -- Kenneth Wimer <wimer@kde.org>  Wed, 21 Feb 2007 19:10:17 +0100
+
+feisty-gdm-themes (0.10-0ubuntu6) feisty; urgency=low
+
+  * changing xml to make username_label text darker, changing all pics to make
+    interface lighter 
+
+ -- Kenneth Wimer <wimer@kde.org>  Mon, 19 Feb 2007 18:10:53 +0100
+
+feisty-gdm-themes (0.10-0ubuntu5) feisty; urgency=low
+
+  * adding lighter colored background 
+
+ -- Kenneth Wimer <wimer@kde.org>  Mon, 19 Feb 2007 01:09:08 +0100
+
+feisty-gdm-themes (0.10-0ubuntu4) feisty; urgency=low
+
+  * fixing stupid mistakes 
+
+ -- Kenneth Wimer <wimer@kde.org>  Sun, 18 Feb 2007 02:06:48 +0100
+
+feisty-gdm-themes (0.10-0ubuntu2) feisty; urgency=low
+
+  * finishing up changing everything 
+
+ -- Kenneth Wimer <wimer@kde.org>  Sun, 18 Feb 2007 01:46:41 +0100
+
+feisty-gdm-themes (0.10-0ubuntu2) feisty; urgency=low
+
+  * updating pretty much everything 
+
+ -- Kenneth Wimer <wimer@kde.org>  Sun, 18 Feb 2007 01:42:26 +0100
+
+feisty-gdm-themes (0.10-0ubuntu1) feisty; urgency=low
+
+  * adding new logo 
+
+ -- Kenneth Wimer <wimer@kde.org>  Fri, 16 Feb 2007 08:51:05 +0100
+
+feisty-gdm-themes (0.9-0ubuntu1) feisty; urgency=low
+
+  * New release:
+    - fixes LP: #70829.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Wed,  7 Feb 2007 18:43:41 +0100
+
+feisty-gdm-themes (0.8-0ubuntu2) feisty; urgency=low
+
+  * debian/control:
+    - version Conflicts/Replaces.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Tue, 28 Nov 2006 18:39:03 +0100
+
+feisty-gdm-themes (0.8-0ubuntu1) feisty; urgency=low
+
+  * New release.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Wed, 22 Nov 2006 18:59:06 +0100
+
+edgy-gdm-themes (0.7-0ubuntu2) edgy; urgency=low
+
+  * debian/copyright:
+    - updated.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Fri, 20 Oct 2006 14:45:18 +0200
+
+edgy-gdm-themes (0.7-0ubuntu1) edgy; urgency=low
+
+  * New release:
+    - New upstream designs for Edgy.
+
+ -- Frank Schoep <frank@ffnn.nl>  Mon, 16 Oct 2006 13:41:53 -0400
+
+edgy-gdm-themes (0.6-0ubuntu1) edgy; urgency=low
+
+  * New release:
+    - GDM themes now have pam-message item (Malone: #57588).
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Thu, 12 Oct 2006 19:14:45 +0200
+
+edgy-gdm-themes (0.5-0ubuntu1) edgy; urgency=low
+
+  * Reverted to Dapper artwork, for discussion please see
+    ubuntu-art@lists.ubuntu.com.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Thu, 12 Oct 2006 10:56:04 +0200
+
+edgy-gdm-themes (0.4-0ubuntu1) edgy; urgency=low
+
+  * New release:
+    - use the "Sans 12" font for the user-pw-entry (Ubuntu: #36251),
+      thanks Sébastien Bacher.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Fri,  6 Oct 2006 12:34:30 +0200
+
+edgy-gdm-themes (0.3-0ubuntu1) edgy; urgency=low
+
+  * New upstream release:
+    - Updated logo layout, added artwork preview notice.
+
+ -- Frank Schoep <frank@ffnn.nl>  Mon, 11 Sep 2006 20:08:42 +0200
+
+edgy-gdm-themes (0.2-0ubuntu1) edgy; urgency=low
+
+  * New upstream release:
+    - Updated artwork to Troy Sobotka's Wave GDM login screen.
+
+ -- Frank Schoep <frank@ffnn.nl>  Wed,  6 Sep 2006 20:09:53 +0200
+
+edgy-gdm-themes (0.1-0ubuntu1) edgy; urgency=low
+
+  * Initial release (as it's own module).
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Thu, 20 Jul 2006 11:41:27 +0200
+
