@@ -4,7 +4,6 @@ Architecture: all
 Maintainer: Samuel J. Taylor(agraman LTD) <samtaylor.uk@gmail.com>
 Installed-Size: 3372
 Section: x11
-Conflicts: ubuntu-artwork
 Priority: optional
 Description: agraman GDM themes
  The default GDM themes for agraman LTSP.
