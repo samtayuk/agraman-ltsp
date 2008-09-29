@@ -1,0 +1,7 @@
+Name: New artwork settings
+Priority: High
+Terminal: False
+DontShowAfterReboot: True
+Description: The system defaults for the artwork setup have changed. 
+ Some of these changes will only take effect after a reboot of the 
+ system, some will need a new login.

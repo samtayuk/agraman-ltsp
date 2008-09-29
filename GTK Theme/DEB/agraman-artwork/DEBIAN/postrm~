@@ -27,8 +27,8 @@ fi
 case "$1" in
     remove)
 	# make sure there are no cdd.defaults settings left
-	if [ -L /usr/share/gconf/defaults/30-agraman ]; then
-	    rm /usr/share/gconf/defaults/30-agraman
+	if [ -L /usr/share/gconf/defaults/20-edubuntu ]; then
+	    rm /usr/share/gconf/defaults/20-edubuntu
 	fi
 
 	# notify the user what we did
@@ -41,7 +41,7 @@ case "$1" in
 	fi
 
 	echo "Reverting GDM changes ..."
-	update-alternatives --remove gdm-config-derivative /usr/share/agraman-artwork/gdm/gdm-cdd.conf
+	update-alternatives --remove gdm-config-derivative /usr/share/edubuntu-artwork/gdm/gdm-cdd.conf
 
 	;;
     upgrade|failed-upgrade|abort-install|abort-upgrade|disappear|purge)

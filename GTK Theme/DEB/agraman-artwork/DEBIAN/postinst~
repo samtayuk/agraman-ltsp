@@ -30,7 +30,7 @@ case "$1" in
   unud=/var/lib/update-notifier/user.d
 
   if [ -d $unud ]; then
-      cp -f /usr/share/agraman-artwork/agraman-artwork-needs-reboot-to-take-effect.update-notifier \
+      cp -f /usr/share/agraman-artwork/edubuntu-artwork-needs-reboot-to-take-effect.update-notifier \
         "$unud/agraman-artwork-needs-reboot-to-take-effect"
   fi
   ;;

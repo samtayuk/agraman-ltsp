@@ -1,7 +1,7 @@
 Package: agraman-artwork
-Version: 0.1
+Version: 0.1.1.3
 Architecture: all
-Maintainer: Samuel J. Taylor <samtaylor.uk@gmail.com>
+Maintainer: Samuel J. Taylor <sam.taylor@agraman.co.uk>
 Installed-Size: 92
 Depends: shiki-wise-theme, agraman-gdm-themes, agraman-wallpapers
 Section: gnome

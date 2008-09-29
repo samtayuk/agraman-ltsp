@@ -1,0 +1,12 @@
+/apps/gnome-session/options/splash_image splash/ubuntu-splash.png
+/desktop/gnome/interface/gtk_theme      Shiki-Wise
+/desktop/gnome/interface/icon_theme     gnome-wise
+/desktop/gnome/peripherals/mouse/cursor_theme   Human
+/apps/metacity/general/theme	Shiki-Colors Metacity
+/desktop/gnome/background/picture_filename /usr/share/backgrounds/Arc-Colors Transparent Wallpaper.png
+/apps/nautilus/preferences/desktop_font "Sans, 8"
+/apps/nautilus/preferences/application_font "Sans, 8"
+/apps/nautilus/preferences/window_title_font "Sans, Bold 8"
+/desktop/gnome/background/picture_options zoom
+/desktop/gnome/background/primary_color #638E36
+/desktop/gnome/background/color_shading_type solid
