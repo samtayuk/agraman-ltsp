@@ -1,0 +1,8 @@
+Arrows:
+- add arrowstyle, get one style from nodoka's 0.8 branch
+
+Notebooks:
+- adjust highlight, doesn't look perfectly with dark themes
+
+Focus:
+- draw focus

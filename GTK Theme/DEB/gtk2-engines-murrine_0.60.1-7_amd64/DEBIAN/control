@@ -1,0 +1,8 @@
+Package: gtk2-engines-murrine
+Priority: extra
+Section: x11
+Installed-Size: 280
+Maintainer: Samuel J. Taylor(agraman LTD) <sam.taylor@agraman.co.uk
+Architecture: amd64
+Version: 0.60.1-7
+Description: Murrine SVN, revision 79. Compiled on 09/27/08.
