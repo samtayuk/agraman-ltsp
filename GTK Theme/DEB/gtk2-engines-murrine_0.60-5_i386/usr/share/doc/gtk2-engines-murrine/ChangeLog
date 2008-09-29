@@ -1,0 +1,587 @@
+2008-09-14  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/cairo-support.c (get_decreased_gradient_shades):
+	Fixed a bug in gradients introduced in rev 65 :)
+
+2008-09-13  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/animation.c:
+	* src/animation.h:
+	* src/cairo-support.c (get_decreased_gradient_shades):
+	* src/cairo-support.h:
+	* src/murrine_draw.c (murrine_draw_button),
+	(murrine_draw_progressbar_fill), (murrine_draw_menubar),
+	(murrine_draw_tab), (murrine_draw_list_view_header),
+	(murrine_draw_menuitem), (murrine_draw_scrollbar_stepper),
+	(murrine_draw_scrollbar_slider), (murrine_draw_tooltip):
+	* src/murrine_draw.h:
+	* src/murrine_draw_rgba.c (murrine_rgba_draw_button),
+	(murrine_rgba_draw_entry), (murrine_rgba_draw_progressbar_fill),
+	(murrine_rgba_draw_menubar), (murrine_rgba_draw_tab),
+	(murrine_rgba_draw_scrollbar_stepper),
+	(murrine_rgba_draw_scrollbar_slider), (murrine_rgba_draw_tooltip):
+	* src/murrine_rc_style.c:
+	* src/murrine_rc_style.h:
+	* src/murrine_style.c:
+	* src/murrine_theme_main.c:
+	* src/murrine_types.h:
+	Less code to do the same thing ;)
+
+2008-09-12  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* schema/murrine.xml.in.in:
+	* src/murrine_rc_style.c (murrine_rc_style_init),
+	(theme_parse_profile), (murrine_rc_style_parse),
+	(murrine_rc_style_merge):
+	* src/murrine_rc_style.h:
+	* src/murrine_style.c (murrine_set_widget_parameters),
+	(murrine_style_draw_vline), (murrine_style_draw_hline),
+	(murrine_style_init_from_rc), (murrine_style_copy),
+	(murrine_style_class_init):
+	* src/murrine_style.h:
+	* src/murrine_types.h:
+	Renamed "style" to "profile", since it reflects what this option
+	does: loading a profile for the style.
+
+2008-09-12  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c (murrine_draw_highlight_and_shade),
+	(murrine_draw_frame):
+	* src/murrine_draw_rgba.c (murrine_draw_highlight_and_shade),
+	(murrine_rgba_draw_frame):
+	Better code for frames
+
+2008-09-12  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c (murrine_draw_frame), (murrine_draw_tab):
+	* src/murrine_draw_rgba.c (murrine_rgba_draw_frame),
+	(murrine_rgba_draw_tab):
+	* src/murrine_style.c (murrine_style_draw_box_gap):
+	Removed useless code
+
+2008-09-12  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c (murrine_draw_tab):
+	* src/murrine_draw_rgba.c (murrine_rgba_draw_tab):
+	Fixed two rendering errors of the highlight, introduced in r60
+
+2008-09-12  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c (murrine_draw_tab), (murrine_draw_menu_frame):
+	* src/murrine_draw_rgba.c (murrine_rgba_draw_tab):
+	Better tab highlighting, upgrade suggested
+
+2008-09-09  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c (murrine_draw_progressbar_trough),
+	(murrine_draw_scrollbar_trough):
+	* src/murrine_draw_rgba.c (murrine_rgba_draw_progressbar_trough),
+	(murrine_rgba_draw_scrollbar_trough):
+	* src/murrine_style.c (murrine_style_realize):
+	Do not change progressbar/scrollbar trough with the contrast function
+
+2008-09-05  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c (murrine_widget_is_rgba),
+	(murrine_set_widget_parameters):
+	Check if widget is not null before proceed asking for the screen
+
+2008-09-03  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/cairo-support.c (get_contrast):
+	* src/cairo-support.h:
+	* src/murrine_style.c (murrine_style_init_from_rc),
+	(murrine_style_realize):
+	Completed contrast function: now it shades progressbars borders 
+	and other widgets
+
+2008-09-03  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c (murrine_draw_tab), (murrine_draw_separator),
+	(murrine_draw_toolbar), (murrine_draw_statusbar),
+	(murrine_draw_resize_grip):
+	* src/murrine_draw_rgba.c (murrine_rgba_draw_tab):
+	* src/murrine_style.c (murrine_style_realize):
+	More fixes for the contrast function
+
+2008-09-03  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c (murrine_style_realize):
+	Reworked contrast function, your themes may change
+
+2008-09-02  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c (murrine_style_draw_box):
+	Added Clearlooks ability to draw better menuitem separators using
+	style properties. Read from Clearlooks gtkrc for more info
+
+2008-09-01  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_rc_style.c (murrine_rc_style_register_types),
+	(murrine_rc_style_finalize), (murrine_rc_style_class_init),
+	(murrine_rc_style_class_finalize), (murrine_rc_style_merge):
+	* src/murrine_rc_style.h:
+	* src/murrine_style.c (murrine_set_widget_parameters),
+	(murrine_style_draw_flat_box), (murrine_style_draw_box_gap),
+	(murrine_style_draw_extension), (murrine_style_draw_box),
+	(murrine_style_draw_slider), (murrine_style_draw_shadow_gap),
+	(murrine_style_init_from_rc), (murrine_style_realize),
+	(murrine_style_copy), (murrine_style_unrealize),
+	(murrine_style_register_types), (murrine_style_class_init),
+	(murrine_style_class_finalize):
+	* src/murrine_style.h:
+	* src/murrine_theme_main.c (theme_init):
+	Use G_DEFINE_DYNAMIC_TYPE in murrine, similar patch to bug #549830.
+	I hope not to have broken anything :)
+
+2008-09-01  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c (murrine_draw_button):
+	* src/murrine_draw_rgba.c (murrine_rgba_draw_button):
+	Removed useless shadow on default button. Is it better?
+
+2008-08-31  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c (murrine_draw_button):
+	* src/murrine_draw_rgba.c (murrine_rgba_draw_button):
+	Do not colorize disabled default button
+
+2008-08-31  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c (murrine_draw_button):
+	* src/murrine_draw_rgba.c (murrine_rgba_draw_button):
+	Removed colored shadow from default button
+
+2008-08-28  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c (murrine_set_widget_parameters),
+	(murrine_style_draw_shadow), (murrine_style_draw_box):
+	Moved some GtkEntry and GtkSpinButton workarounds
+
+2008-08-27  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* autogen.sh:
+	* src/config.h.in:
+	Updated autogen.sh, removed config.h.in now generated by autogen.sh
+	Thanks to Werner Pantke
+
+2008-08-27  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/config.h.in:
+	Re-added
+
+2008-08-27  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* CREDITS:
+	Thanks to Werner Pantke
+
+2008-08-27  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* Makefile.am:
+	* autogen.sh:
+	* configure.ac:
+	* schema/Makefile.am:
+	* schema/murrine.xml.in.in:
+	Added murrine schema file installation
+
+	* src/config.h.in:
+	Deleted
+	
+	* src/murrine_draw.c (murrine_draw_tab):
+	Less shading on selected tab
+
+2008-08-27  Werner Pantke  <wpantke@punk-ass-bitch.org>
+
+	* Makefile.am:
+	added schema subdirectory for processing and installation, and po
+	subdirectory for processing only (no need to install gettext
+	catalogs as translations are only used inside the schema atm)
+
+	* autogen.sh:
+	added check for intltool(ize) (and run it),
+	removed "Now type 'make'[..]" sentence as it's already printed by
+	the configure script
+
+	* configure.ac:
+	added AC_PROG_INTLTOOL and AM_GLIB_GNU_GETTEXT macros,
+	this introduces gettext and intltool (>= 0.40.3) as dependency;
+	added generation of po/Makefile.in, schema/Makefile,
+	schema/murrine.xml.in
+
+	* po/POTFILES.in:
+	marked schema/murrine.xml.in translatable
+
+	* po/POTFILES.skip:
+	marked schema/murrine.xml.in.in to be ignored by gettext
+
+	* po/ChangeLog:
+	* po/LINGUAS:
+	added empty dummy files for translators
+
+	* schema/Makefile.am:
+	* schema/murrine.xml.in.in:
+	added substitution variables and i18n support, the schema file
+	murrine.xml gets installed to $prefix/share/gtk-engines
+
+2008-08-24  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c (murrine_draw_tab):
+	* src/murrine_draw_rgba.c (murrine_rgba_draw_tab):
+	Fix inactive tabs
+
+2008-08-24  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_rc_style.c (murrine_rc_style_init):
+	RGBA = FALSE, new default
+
+2008-08-24  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* TODO:
+	Added TODO file
+
+2008-08-24  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c (murrine_draw_tab):
+	* src/murrine_draw_rgba.c (murrine_rgba_draw_tab):
+	New tabs. I forgot to mention that in the previous commit 
+	I fixed sliderbuttons in disabled state
+
+2008-04-11  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c: (murrine_draw_entry),
+	(murrine_scale_draw_gradient), (murrine_draw_scale_trough),
+	(murrine_draw_slider_handle), (murrine_draw_progressbar_trough):
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_entry),
+	(murrine_scale_draw_gradient), (murrine_rgba_draw_scale_trough),
+	(murrine_rgba_draw_progressbar_trough):
+	Progressbar trough updated.
+
+2008-04-10  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/cairo-support.c: (murrine_draw_lightborder),
+	(murrine_set_gradient):
+	* src/murrine_draw.c: (murrine_draw_button),
+	(murrine_draw_progressbar_fill), (murrine_draw_tab),
+	(murrine_draw_list_view_header), (murrine_draw_scrollbar_slider),
+	(murrine_draw_tooltip):
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_button),
+	(murrine_rgba_draw_progressbar_fill), (murrine_rgba_draw_tab),
+	(murrine_rgba_draw_scrollbar_slider), (murrine_rgba_draw_tooltip):
+	* src/murrine_rc_style.c: (murrine_rc_style_init),
+	(theme_parse_gradient), (murrine_rc_style_parse),
+	(murrine_rc_style_merge):
+	* src/murrine_rc_style.h:
+	* src/murrine_style.c: (murrine_set_widget_parameters),
+	(murrine_style_init_from_rc), (murrine_style_copy):
+	* src/murrine_style.h:
+	* src/murrine_types.h:
+	First approach with the new gradient_shades array for the options.
+	Name may change in the future.
+
+2008-04-10  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/cairo-support.c: (murrine_draw_lightborder):
+	* src/murrine_rc_style.c: (murrine_rc_style_init),
+	(murrine_rc_style_parse), (murrine_rc_style_merge):
+	* src/murrine_rc_style.h:
+	* src/murrine_style.c: (murrine_set_widget_parameters),
+	(murrine_style_init_from_rc), (murrine_style_copy):
+	* src/murrine_style.h:
+	A lot of changes in the gradient code,
+	it should look as before but I'm deprecating code.
+	Bugs could occures.
+
+	* src/support.c: (murrine_scrollbar_get_junction):
+	http://bugzilla.gnome.org/show_bug.cgi?id=526890
+
+2008-04-09  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* schema/murrine.xml.in.in:
+	Added a rough schema file
+
+2008-04-01  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_menubar):
+	* src/murrine_style.c: (murrine_style_draw_box):
+	* src/support.h:
+	Less opacity, less transparency on windows (testing, tell me if it is ugly)
+	GTK_SHADOW_NONE support on RGBA menubars
+
+2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c: (murrine_draw_scale_trough):
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_scale_trough):
+	Use shade[2] taken from parentbg to draw the scale trough
+
+2008-03-13  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/cairo-support.c: (murrine_get_parent_bg):
+	Got the notebook check a bit wrong earlier
+
+2008-03-13  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/cairo-support.c: (murrine_get_parent_bg):
+	Various fixes to murrine_get_parent_bg.
+	Thanks to Benjamin Berg
+
+2008-03-08  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c: (murrine_style_init_from_rc):
+	listviewheaderstyle = 1 for the CLEARLOOKS profile
+
+2008-03-08  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c: (murrine_draw_scrollbar_stepper):
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_scrollbar_stepper):
+	Fixed lightborder in scrollbar stepper
+
+2008-03-07  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c: (murrine_draw_radiobutton),
+	(murrine_draw_checkbox):
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_radiobutton),
+	(murrine_rgba_draw_checkbox):
+	* src/murrine_style.c: (murrine_style_draw_option),
+	(murrine_style_draw_check):
+	* src/murrine_types.h:
+	Implemented inconsistent state for radiobutton
+
+2008-03-07  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* configure.ac:
+	* src/config.h.in:
+	* src/murrine_style.c: (murrine_widget_is_rgba),
+	(murrine_style_draw_box):
+	Added --disable-rgba at the configure,
+	renamed --enable-animationtoleft to --enable-animationrtl
+
+2008-02-29  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c: (murrine_style_draw_box):
+	Fixed this bug:
+	https://bugs.launchpad.net/ubuntu/+source/gtk2-engines-murrine/+bug/195929
+
+2008-02-27  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c: (murrine_draw_button):
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_button):
+	That was part of the last commit :)
+
+2008-02-27  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c: (murrine_style_draw_box):
+	Fixed menubaritems with menubaritemstyle = 1.
+	Bye bye Murrine, see you in April :)
+
+2008-02-27  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c: (murrine_draw_button):
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_button):
+	* src/murrine_style.c: (murrine_style_init_from_rc),
+	(murrine_style_realize):
+	Fixed contrast and inset on RGBA active buttons
+
+2008-02-27  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c: (murrine_style_init_from_rc):
+	I accidentally broke NODOKA emulated style on rev 18, fixing
+
+2008-02-27  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw.c: (murrine_draw_button), (murrine_draw_entry),
+	(murrine_draw_scale_trough), (murrine_draw_radiobutton),
+	(murrine_draw_checkbox):
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_button),
+	(murrine_rgba_draw_entry), (murrine_rgba_draw_scale_trough),
+	(murrine_rgba_draw_radiobutton), (murrine_rgba_draw_checkbox):
+	* src/murrine_rc_style.c: (murrine_rc_style_init),
+	(murrine_rc_style_parse), (murrine_rc_style_merge):
+	* src/murrine_rc_style.h:
+	* src/murrine_style.c: (murrine_set_widget_parameters),
+	(murrine_style_init_from_rc), (murrine_style_copy):
+	* src/murrine_style.h:
+	* src/murrine_types.h:
+	Added reliefstyle, 2 means shadow, 1 inset, 0 flat
+	Need to be added also on draw_frame
+
+2008-02-27  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/cairo-support.c: (murrine_draw_lightborder):
+	* src/cairo-support.h:
+	* src/murrine_draw.c: (murrine_draw_button),
+	(murrine_draw_progressbar_fill), (murrine_draw_menubar),
+	(murrine_draw_list_view_header), (murrine_draw_menuitem),
+	(murrine_draw_scrollbar_stepper), (murrine_draw_scrollbar_slider):
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_button),
+	(murrine_rgba_draw_progressbar_fill), (murrine_rgba_draw_menubar),
+	(murrine_rgba_draw_scrollbar_stepper),
+	(murrine_rgba_draw_scrollbar_slider):
+	* src/murrine_rc_style.c: (murrine_rc_style_init),
+	(murrine_rc_style_parse), (murrine_rc_style_merge):
+	* src/murrine_rc_style.h:
+	* src/murrine_style.c: (murrine_set_widget_parameters),
+	(murrine_style_init_from_rc), (murrine_style_realize),
+	(murrine_style_copy):
+	* src/murrine_style.h:
+	* src/murrine_types.h:
+	Added lightborderstyle, to draw the lightborder on all edges
+	(lightborderstyle = 1, 0 is default)
+
+2008-02-27  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/cairo-support.c: (murrine_draw_lightborder):
+	* src/cairo-support.h:
+	* src/murrine_draw.c: (murrine_draw_button),
+	(murrine_draw_progressbar_fill), (murrine_draw_menubar),
+	(murrine_draw_list_view_header), (murrine_draw_menuitem),
+	(murrine_draw_scrollbar_stepper), (murrine_draw_scrollbar_slider):
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_button),
+	(murrine_rgba_draw_progressbar_fill), (murrine_rgba_draw_menubar),
+	(murrine_rgba_draw_scrollbar_stepper),
+	(murrine_rgba_draw_scrollbar_slider):
+	* src/murrine_rc_style.c: (murrine_rc_style_init),
+	(murrine_rc_style_parse), (murrine_rc_style_merge):
+	* src/murrine_rc_style.h:
+	* src/murrine_style.c: (murrine_set_widget_parameters),
+	(murrine_style_init_from_rc), (murrine_style_copy):
+	* src/murrine_style.h:
+	* src/murrine_types.h:
+	Renamed innerborder_ratio to lightborder_ratio
+
+2008-02-26  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c: (murrine_style_realize):
+	Fixed broken algorithm for the contrast option
+
+2008-02-19  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_tooltip),
+	(murrine_rgba_draw_menu_frame), (murrine_register_style_rgba):
+	* src/murrine_style.c: (murrine_style_draw_flat_box),
+	(murrine_style_draw_shadow):
+	* src/support.h:
+	Rounded Tooltips
+
+2008-02-19  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/support.h:
+	Minor tweaks in transparency
+
+2008-02-17  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/support.h:
+	Minor tweaks in transparency
+
+2008-02-16  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/support.h:
+	Less transparency, more opacity on rgba mode :)
+	Tell me if you like it more
+
+2008-02-16  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/cairo-support.c: (murrine_draw_innerborder):
+	* src/murrine_style.c: (murrine_style_draw_flat_box):
+	Code polished
+
+2008-02-16  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_entry),
+	(murrine_rgba_draw_menubar), (murrine_rgba_draw_toolbar),
+	(murrine_rgba_draw_tab), (murrine_rgba_draw_menu_frame):
+	* src/murrine_rc_style.c: (murrine_rc_style_init),
+	(murrine_rc_style_parse), (murrine_rc_style_merge):
+	* src/murrine_rc_style.h:
+	* src/murrine_style.c: (murrine_set_widget_parameters),
+	(murrine_style_draw_flat_box), (murrine_style_draw_box_gap),
+	(murrine_style_draw_box), (murrine_style_init_from_rc),
+	(murrine_style_copy):
+	* src/murrine_style.h:
+	* src/murrine_types.h:
+	Rev 8 again :)
+
+2008-02-16  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_entry),
+	(murrine_rgba_draw_menubar), (murrine_rgba_draw_toolbar),
+	(murrine_rgba_draw_tab), (murrine_rgba_draw_menu_frame):
+	* src/murrine_rc_style.c: (murrine_rc_style_init),
+	(murrine_rc_style_parse), (murrine_rc_style_merge):
+	* src/murrine_rc_style.h:
+	* src/murrine_style.c: (murrine_set_widget_parameters),
+	(murrine_style_draw_flat_box), (murrine_style_draw_box_gap),
+	(murrine_style_draw_box), (murrine_style_init_from_rc),
+	(murrine_style_copy):
+	* src/murrine_style.h:
+	* src/murrine_types.h:
+	Just for the History... this version has an opacity ratio, but it is
+	dangerous :)
+	So I will remove it in the next commit
+
+2008-02-15  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/cairo-support.c: (murrine_draw_innerborder),
+	(murrine_set_gradient):
+	* src/murrine_draw.c: (murrine_draw_tab):
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_tab):
+	* src/murrine_style.c: (murrine_set_widget_parameters):
+	* src/murrine_types.h:
+	Simplified gradients's code, I hope that nothing got broken :)
+
+2008-02-15  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/animation.h:
+	* src/murrine_draw_rgba.c: (murrine_rgba_draw_tab):
+	* src/murrine_style.c: (murrine_style_draw_box_gap):
+	* src/support.h:
+	Using cairo operator SOURCE to draw notebooks in RGBA
+	Removed a duplicated definition of MRN_IS_PROGRESS_BAR
+
+2008-02-13  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/cairo-support.c: (murrine_shade), (murrine_draw_innerborder),
+	(murrine_set_gradient):
+	* src/cairo-support.h:
+	* src/murrine_draw.c: (murrine_draw_inset),
+	(murrine_draw_highlight_and_shade), (murrine_draw_button),
+	(murrine_draw_entry), (murrine_draw_spinbutton_down),
+	(murrine_draw_slider_handle), (murrine_draw_progressbar_fill),
+	(murrine_draw_menubar), (murrine_draw_frame), (murrine_draw_tab),
+	(murrine_draw_separator), (murrine_draw_list_view_header),
+	(murrine_draw_toolbar), (murrine_draw_menuitem),
+	(murrine_draw_scrollbar_stepper), (murrine_draw_scrollbar_slider),
+	(murrine_draw_selected_cell), (murrine_draw_statusbar),
+	(murrine_draw_menu_frame), (murrine_draw_tooltip),
+	(murrine_draw_radiobutton), (murrine_draw_checkbox),
+	(murrine_draw_resize_grip):
+	* src/murrine_draw_rgba.c: (murrine_draw_inset),
+	(murrine_draw_highlight_and_shade), (murrine_rgba_draw_button),
+	(murrine_rgba_draw_entry), (murrine_rgba_draw_progressbar_fill),
+	(murrine_rgba_draw_menubar), (murrine_rgba_draw_toolbar),
+	(murrine_rgba_draw_frame), (murrine_rgba_draw_tab),
+	(murrine_rgba_draw_scrollbar_stepper),
+	(murrine_rgba_draw_scrollbar_slider),
+	(murrine_rgba_draw_radiobutton), (murrine_rgba_draw_checkbox),
+	(murrine_rgba_draw_menu_frame):
+	* src/murrine_style.c: (murrine_style_draw_layout),
+	(murrine_style_realize):
+	Nothing new, just changed the syntax for murrine_shade
+
+2008-02-13  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c: (murrine_style_draw_box):
+	Don't read shadow-type in rgba mode, avoid glitches
+	but the flat menubar will be unsupported
+
+2008-02-13  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c: (murrine_style_draw_box):
+	Fix an error in make
+
+2008-02-13  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* src/murrine_style.c: (murrine_style_draw_handle),
+	(murrine_style_draw_box):
+	Draw toolbaras and menubars just when shadow-type
+	is not GTK_SHADOW_NONE
+

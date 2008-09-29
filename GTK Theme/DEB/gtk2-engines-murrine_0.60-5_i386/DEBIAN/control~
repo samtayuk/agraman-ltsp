@@ -1,0 +1,9 @@
+Package: gtk2-engines-murrine
+Priority: extra
+Section: checkinstall
+Installed-Size: 272
+Maintainer: root@victor-desktop
+Architecture: i386
+Version: 0.60-5
+Depends: 
+Description: Murrine SVN, revision 66. Compiled on 09/13/08.
